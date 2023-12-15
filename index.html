@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fee's Accessible Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="wholepage">
+        <img
+          id="displayImage"
+          src="./images/islandorig.jpg"
+          alt="The island of Paros from above surrounded by a blue-green sea"
+        />
+
+        <div class="thumbnails">
+          <img
+            src="./images/islandorig.jpg"
+            alt="The island of Paros from above surrounded by a blue-green sea"
+          />
+          <img
+            src="./images/hotelorig.jpg"
+            alt="Poolside at a hotel in Paros, blue water, bougaenvillia gorwing up the walls"
+          />
+          <img
+            src="./images/streetorig.jpg"
+            alt="Wandering through the streets of Paros, white buildings and white stone streets"
+          />
+          <img
+            src="./images/fishorig.jpg"
+            alt="A local fisherman preparing his nets for the day, in his boat in the harbour"
+          />
+          <div
+            id="announcer"
+            role="status"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

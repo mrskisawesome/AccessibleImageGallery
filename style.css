@@ -1,0 +1,127 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.wholepage {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  z-index: 0;
+}
+.thumbnails {
+  /*position: absolute;
+  top: 50px;
+  left 50%;*/
+  display: flex;
+  width: 100%;
+  padding: 18px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 43px;
+  z-index: 1;
+  position: absolute;
+}
+/*button {
+  background: linear-gradient(to bottom, red, yellow, red);
+}*/
+
+.thumbnails img {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+#displayImage {
+  width: 100%;
+}
+#announcer {
+  font-size: 10px;
+  color: transparent;
+}
+@media (max-width: 1000px) {
+  .thumbnails {
+    display: flex;
+    width: 42%;
+    padding: 9px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    z-index: 1;
+    position: absolute;
+  }
+  .thumbnails img {
+    width: 150px;
+    flex-wrap: wrap;
+  }
+
+  #displayImage {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .wholepage {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    z-index: 0;
+  }
+  .thumbnails {
+    display: flex;
+    width: 26%;
+    padding: 9px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    z-index: 1;
+    position: absolute;
+  }
+  .thumbnails img {
+    width: 150px;
+    flex-wrap: wrap;
+  }
+
+  #displayImage {
+    width: 180%;
+  }
+}
+
+@media (max-width: 675px) {
+  .wholepage {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+    z-index: 0;
+  }
+  .thumbnails {
+    display: flex;
+    width: 26%;
+    padding: 9px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    z-index: 1;
+    position: absolute;
+    flex-direction: column;
+  }
+  .thumbnails img {
+    width: 80px;
+  }
+
+  #displayImage {
+    width: 180%;
+  }
+}
